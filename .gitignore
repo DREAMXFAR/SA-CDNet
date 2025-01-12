@@ -1,0 +1,6 @@
+# ignore files
+
+.DS_Store
+
+checkpoints/*.pth
+fastsam_model/*.pth

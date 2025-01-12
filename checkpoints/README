@@ -1,0 +1,29 @@
+You can download the release models here following our [instructions](../README.md).
+
+This directory should be organized as follows. 
+
+```shell 
+── checkpoints  # model checkpoints, need to download model checkpoints
+  ├── SANet 
+  │   ├── LEVIR
+  │   │   ├── no_pretrain.pth
+  │   │   └── with_pretrain.pth
+  │   ├── LEVIR+
+  │   │   ├── no_pretrain.pth
+  │   │   └── with_pretrain.pth
+  │   ├── S2Looking
+  │   │   ├── no_pretrain.pth
+  │   │   └── with_pretrain.pth
+  │   ├── WHU
+  │   │   ├── no_pretrain.pth
+  │   │   └── with_pretrain.pth
+  │   └── WHU_CUL
+  │       ├── no_pretrain.pth
+  │       └── with_pretrain.pth
+  └── pre_train  # pre-trained models
+      ├── Building
+      │   └── pretrain_Building.pth
+      └── Cultivalted land
+          └── pretrain_cultivalted.pth
+```
+

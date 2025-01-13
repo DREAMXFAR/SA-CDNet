@@ -12,13 +12,15 @@
 
 > Yuhang Gan, Wenjie Xuan, Zhiming Luo, Lei Fang, Zengmao Wang, Juhua Liu, Bo Du
 
-This is the official implementation for Semantic-Aware Change Detection network, namely SA-CDNet, which transfers the common knowledge of the visual foundation models to change detection. Moreover, a single-temporal semantic pre-training strategy is proposed to enrich the semantic prior of the network. **[Under Review]**
+This is the PyTorch implementation for Semantic-Aware Change Detection network, namely SA-CDNet, which transfers the common knowledge of the visual foundation models to change detection. Moreover, a single-temporal semantic pre-training strategy is proposed to enrich the semantic prior of the network. 
+
+**[Under Review]**
 
 
 
 ## :fire: News
 
-- **[2025/01/10]**: Codes for training and inference are released. 
+- **[2025/01/13]**: Codes for training and evaluation are released. This repo is an updated version of [SA-CD](https://github.com/thislzm/SA-CD) by the co-author Zhiming Luo. 
 
 
 
@@ -55,7 +57,7 @@ This is the official implementation for Semantic-Aware Change Detection network,
 
 ```shell
 # set up repository 
-git clone https://github.com/thislzm/SA-CDNet.git
+git https://github.com/DREAMXFAR/SA-CDNet.git
 cd SA-CDNet-master
 
 # install conda environment 
@@ -169,9 +171,9 @@ You can download the following checkpoints and put them in `checkpoints/` and `f
     root2 = "/path/to/the/second/dataset"
     
     # for three datasets, in ./datasets/pre_CD3.py, line 16
-    root1 = "<path_to_first_dataset>"
-    root2 = "<path_to_second_dataset>"
-    root3 = "<path_to_third_dataset>"
+    root1 = "/path/to/first/dataset"
+    root2 = "/path/to/second/dataset"
+    root3 = "/path/to/third/dataset"
     ```
 
 2. Update the model path of FastSAM in the following files. 
@@ -212,7 +214,7 @@ You can download the following checkpoints and put them in `checkpoints/` and `f
      # the parameter settings for training, in ./train.py 
      # the path of saved models, in line 20 and 24
      NET_NAME = '/path/of/model/name' 
-     DATA_NAME = 'path/of/data/name'
+     DATA_NAME = '/path/of/data/name'
      
      # enable to load pre-trained models, line 40
      'load_premodel': True 

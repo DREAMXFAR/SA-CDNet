@@ -2,18 +2,13 @@
     Detect Changes like Humans: Incorporating Semantic Priors for Improved Change Detection
 </h1></h1> 
 <p align="center">
-<a href="https://arxiv.org/abs/2412.16918"><img src="https://img.shields.io/badge/arXiv-2403.00647-b31b1b.svg"></a>
+<a href="https://arxiv.org/abs/2412.16918"><img src="https://img.shields.io/badge/arXiv-2403.00647-b31b1b.svg?style=flat-square"></a>
+<a href="https://github.com/DREAMXFAR/SA-CDNet"><img src="https://img.shields.io/github/contributors/thislzm/SA-CD.svg?style=flat-square"></a>
+<a href="https://github.com/DREAMXFAR/SA-CDNet/network/members"><img src="https://img.shields.io/github/forks/thislzm/SA-CD.svg?style=flat-square"></a>
+<a href="https://github.com/DREAMXFAR/SA-CDNet/stargazers"><img src="https://img.shields.io/github/stars/thislzm/SA-CD.svg?style=flat-square"></a>
+<a href="https://github.com/DREAMXFAR/SA-CDNet/issues"><img src="https://img.shields.io/github/issues/thislzm/SA-CD.svg?style=flat-square"></a>
+<a href="https://github.com/DREAMXFAR/SA-CDNet/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/thislzm/SA-CD.svg?style=flat-square"></a>
 </p>
-<!-- PROJECT SHIELDS -->
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-<!-- PROJECT LOGO -->
-<br />
 
 > Yuhang Gan, Wenjie Xuan, Zhiming Luo, Lei Fang, Zengmao Wang, Juhua Liu, Bo Du
 
@@ -56,7 +51,7 @@ This is the official implementation for Semantic-Aware Change Detection network,
 
 ## :hammer_and_wrench: Install
 
-**Recommended**:  `Python=3.11` `torch=2.1.2` `CUDA=12.2` 
+**Recommended**:  `Python=3.7` `torch=1.9.0` `CUDA=11.7` 
 
 ```shell
 # set up repository 
@@ -64,8 +59,10 @@ git clone https://github.com/thislzm/SA-CDNet.git
 cd SA-CDNet-master
 
 # install conda environment 
-conda env create -f environment.yaml 
+conda create -n sacdnet python=3.7
 conda activate sacdnet
+
+pip install -r requirements.txt
 ```
 
 
@@ -355,20 +352,3 @@ If you find our findings helpful in your research, please consider giving this r
       url={https://arxiv.org/abs/2412.16918}, 
 }
 ```
-
-<!-- links -->
-
-[your-project-path]:thislzm/SA-CD
-[contributors-shield]: https://img.shields.io/github/contributors/thislzm/SA-CD.svg?style=flat-square
-[contributors-url]: https://github.com/thislzm/SA-CD/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/thislzm/SA-CD.svg?style=flat-square
-[forks-url]: https://github.com/thislzm/SA-CD/network/members
-[stars-shield]: https://img.shields.io/github/stars/thislzm/SA-CD.svg?style=flat-square
-[stars-url]: https://github.com/thislzm/SA-CD/stargazers
-[issues-shield]: https://img.shields.io/github/issues/thislzm/SA-CD.svg?style=flat-square
-[issues-url]: https://img.shields.io/github/issues/thislzm/SA-CD.svg
-[license-shield]: https://img.shields.io/github/license/thislzm/SA-CD.svg?style=flat-square
-[license-url]: https://github.com/thislzm/SA-CD/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/shaojintian
-
